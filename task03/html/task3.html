@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      background-image: url(../images/task3.jpg);
+      background-size: cover;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 38px;
+    }
+    form {
+      width: 500px;
+      height: 485px;
+      margin: 0 auto;
+      background-color: #f6be47;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 35px;
+    }
+    input[type="number"] {
+      width: 96%;
+      padding: 10px;
+      border-radius: 5px;
+      height: 35px;
+      font-size: 20px;
+      border: none;
+      margin-bottom: 20px;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+      border: none;
+      height: 45px;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 20px 40px;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #3e8e41;
+    }
+    #result {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Temperature Converter</h1>
+  <form>
+    <label>Temperature:</label>
+    <input type="number" id="temperature" placeholder="Enter temperature value" required>
+    <label>From:</label>
+    <select id="from">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+      <option value="kelvin">Kelvin</option>
+    </select>
+    <label>To:</label>
+    <select id="to">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+      <option value="kelvin">Kelvin</option>
+    </select>
+    <button type="button" onclick="convert()">Convert</button>
+  </form>
+  <div id="result"></div>
+  <div id="result-box"></div>
+
+  <script>
+    function convert() {
+  let temperature = document.getElementById("temperature").value;
+  let from = document.getElementById("from").value;
+  let to = document.getElementById("to").value;
+  let result = document.getElementById("result-box");
+  if (from === "celsius" && to === "fahrenheit") {
+    result.innerHTML = temperature * 9 / 5 + 32 + " °F";
+  } else if (from === "celsius" && to === "kelvin") {
+    result.innerHTML = parseFloat(temperature) + 273.15 + " K";
+  } else if (from === "fahrenheit" && to === "celsius") {
+    result.innerHTML = (temperature - 32) * 5 / 9 + " °C";
+  } else if (from === "fahrenheit" && to === "kelvin") {
+    result.innerHTML = (temperature - 32) * 5 / 9 + 273.15 + " K";
+  } else if (from === "kelvin" && to === "celsius") {
+    result.innerHTML = temperature - 273.15 + " °C";
+  } else if (from === "kelvin" && to === "fahrenheit") {
+    result.innerHTML = (temperature - 273.15) * 9 / 5 + 32 + " °F";
+  } else {
+    result.innerHTML = "Please select a conversion type";
+  }
+  result.style.border = "7px solid  #f6be47";
+  result.style.padding = "10px";
+  result.style.width="25%";
+  result.style.marginLeft="527px";
+  result.style.fontSize="25px";
+  result.style.fontWeight="bold";
+
+}
+
+  </script>
+    
