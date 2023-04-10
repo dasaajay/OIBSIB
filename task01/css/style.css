@@ -1,0 +1,193 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    }
+    
+    /* Global Styles */
+    body {
+    background-color: #f0f0f0;
+    }
+    
+    header {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #333;
+    }
+    
+    h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:rgb(18, 237, 18);
+    font-family: Berlin Sans FB Demi;
+    
+    }
+
+    h1:hover {
+      
+      text-shadow: 0 0 10px rgba(236, 220, 45, 0.8);
+    }
+
+    
+    
+    h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    nav {
+    margin-top: 5px;
+    text-align: right;
+    margin-bottom: 30px;
+    }
+    
+    nav ul {
+    list-style: none;
+    margin-bottom: 10px;
+
+    }
+    
+    nav li {
+    display: inline-block ;
+    margin-right: 20px;
+    float: right;
+    font-size: 5px;
+    }
+    
+    nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    }
+    
+    nav a:hover {
+    color: #161615;
+    border-color: black;
+    background-color: rgb(246, 196, 134);
+    padding: 5px;
+    }
+    
+    main {
+    max-width: 10000px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: beige;
+    margin-top: 5px;
+    }
+    
+    .banner {
+        background-image: url("../images/task1.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 165px 20px;
+        text-align: center;
+        color: #fff;
+        margin-top: 5px;
+      }
+      
+    
+    .banner h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .banner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+    
+    .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+    background-color: #333;
+    color: #fff;
+    }
+    
+    .features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-left: 5px;
+    }
+    
+    .feature {
+    flex-basis: 340pt;
+    margin-right: 19px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    }
+    
+    .feature img {
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    }
+    
+    .feature h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .feature p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    }
+    
+    footer p {
+    font-size: 16px;
+    }
+    .list
+    {
+     /* border: 2px solid yellow;*/
+      text-align: center;
+      padding: 10px 10px 10px 10px;
+      background-color: antiquewhite;
+      width: 98.7%;
+      padding-bottom: 20px;
+    font-size: 50px;
+     }
+     @font-face {
+      font-family: Berlin Sans FB Demi;
+      src: url(../Documents/BRLNSDB.TTF) format("truetype");
+  }
+  
